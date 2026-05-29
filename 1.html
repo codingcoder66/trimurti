@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishnu</title>
+    <style>
+        body {
+            background-image: url(vishnu.jpg);
+            background-repeat: no-repeat;
+            background-position: top;
+            font-family: sans-serif; 
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;      /* Use min-height so content doesn't get cut off */
+            margin: 0;
+        }
+        
+        /* Added a wrapper to keep the box and button together in the center */
+        .content-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 640px; /* Matches box width + padding */
+        }
+
+        .box2 {
+            background-color: aquamarine;
+            border: 10px solid black; 
+            padding: 20px; 
+            width: 100%;       /* Fills the wrapper */
+            box-sizing: border-box; /* Includes padding in width calculation */
+            border-radius: 8px; 
+        }
+
+        p {
+            color: black;
+            font-size: large;
+            line-height: 1.6;
+            margin: 0; /* Clears default margins */
+        }
+         
+        .button-container {
+            text-align: center; 
+            margin-top: 20px;   /* Space between the aquamarine box and button */
+        }
+
+        .next-button {
+            background-color: slategrey; 
+            color: white;              
+            padding: 10px 20px;        
+            text-decoration: none;     
+            border-radius: 5px;        
+            display: inline-block;     
+            font-family: Arial, sans-serif;
+        }
+
+        .next-button:hover {
+            background-color: #0056b3; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Vishnu</h1>
+    <!-- This wrapper keeps your text box and button centered as a single unit -->
+    <div class="content-wrapper">
+        <div class="box2">
+            <p>
+                Vishnu is the protector of the universe in Hinduism. He forms the Trimurti along with Brahma (the Creator) and Shiva (the Destroyer).
+                As the maintainer of everything and anything, he descends to Earth in the form of different Avatars to restore Dharma (moral balance) whenever the world is in peril.
+            </p>
+        </div>
+        
+        <div class="button-container">
+            <a href="next-page.html" class="next-button">Next Page</a>
+        </div>
+    </div>
+</body>
+</html> 
